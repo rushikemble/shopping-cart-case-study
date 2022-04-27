@@ -1,0 +1,89 @@
+.login-section{
+    padding-top: 81.89px;
+}
+
+.login-cont{
+    display: flex;
+    padding: 60px 0;
+}
+.login-heading-wp{
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    flex-direction: column;
+    align-content: flex-start;
+    align-items: flex-start;
+
+        h3 {
+            font-size: 2em;
+            padding: 1.625rem 0;
+        }
+
+        p {
+            font-size: 1.1em;
+        }
+  
+}
+
+.form-wp{
+    width: 35%;
+    form {
+            display: flex;
+            flex-direction: column;
+            
+                input{
+                        height: 50px;
+                        margin: 10px 0;
+                        border: none;
+                        border-bottom: 1px solid #b8b8b8;
+                        outline: none;
+                        &::placeholder {
+                            -webkit-transform: translateY(0px);
+                            transform: translateY(0px);
+                            -webkit-transition: .5s;
+                            transition: .5s;
+                            font-size: 16px;
+                        }
+                        
+                        &:hover,
+                        &:focus,
+                        &:active:focus {
+                            color: $tertiary-color;
+                            outline: none;
+                            border-bottom: 1px solid $tertiary-color;
+                        
+                            &::placeholder {
+                                color: $tertiary-color;
+                                position: relative;
+                                -webkit-transform: translateY(-15px);
+                                transform: translateY(-15px);
+                                font-size: 14px;
+                            }
+                        }
+                
+                }
+            button[type=submit]{
+                    padding: 15px;
+                    color: white;
+                    background-color: #d6224c;
+                    margin-top: 15px;
+            }    
+            
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .login-cont{
+        flex-direction: column;
+    }
+    
+    .login-heading-wp{
+        width: 100%;
+        padding: 40px 0;
+    }
+
+    .form-wp{
+        width: 90%;
+    }
+}

@@ -1,0 +1,53 @@
+// ------------------------- Hero Section ---------------------------
+.hero-section{
+    .hero-cont{
+        box-shadow: $bottom-box-shadow;
+    }
+}
+
+
+.hero-section {
+    padding-top: 20px;
+
+    .hero-cont {
+        box-shadow: 0 6px 4px -4px rgba(0, 0, 0, 0.2);
+    }
+}
+
+.swiper {
+    width: 100%;
+    // height: 60vh;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.swiper-button-next::after,
+.swiper-rtl .swiper-button-prev::after{
+    color: $primary-color;
+    font-size: 30px !important;
+}
+.swiper-button-prev:after,
+.swiper-rtl .swiper-button-next:after{
+    color: $primary-color;
+    font-size: 30px !important;
+}
+
+// ------------------------- End of Hero Section ---------------------------

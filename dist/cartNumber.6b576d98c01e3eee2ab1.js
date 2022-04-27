@@ -1,0 +1,1 @@
+(()=>{var t=document.querySelector(".cart-items"),e=JSON.parse(localStorage.getItem("cart"))||[];t.textContent=e.length>0?"".concat(e.length," items"):"0 items"})();
